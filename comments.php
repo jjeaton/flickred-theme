@@ -30,7 +30,7 @@
 <?php endif; ?>
 
 <p>
-<?php comments_rss_link(__('Comments RSS')); ?> 
+<?php post_comments_feed_link(__('Comments RSS')); ?> 
 <?php if ( pings_open() ) : ?>
 
 <a href="<?php trackback_url() ?>" rel="trackback"><?php _e('TrackBack Identifier URI'); ?></a>

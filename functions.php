@@ -7,17 +7,8 @@ if ( function_exists('register_sidebar') )
         'after_title' => '</h2>',
     ));
 
-/**
- * Name: Mom Top Widget
- * URI: http://www.merriecontrary.com/
- * Description: A widget for the top of Mom's sidebar. 
- * Version: 0.1
- * Author: Josh Eaton
- * Author URI: http://www.joshuajeaton.com
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+/******************************************
+ * Mom Top Widget
  */
 
 /**
@@ -170,31 +161,8 @@ class Mom_Top_Widget extends WP_Widget {
 	}
 }
 
-/* Header image replacement */
-
-/*
- Plugin Name: Header Image Switcher
- Plugin URI: http://www.joshuajeaton.com/
- Description: Displays a new header image in your blog based on provided url.
- Author: Josh Eaton
- Version: 0.1
- Author URI: http://www.joshuajeaton.com/
-
- Copyright (C) 2009 Josh Eaton (jjeaton@gmail.com)
-
- This program is free software; you can redistribute it and/or
- modify it under the terms of the GNU General Public License
- as published by the Free Software Foundation; either version 2
- of the License, or (at your option) any later version.
-
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with this program; if not, write to the Free Software
- Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+/******************************************
+ * Header image replacement
  */
 
 /* Check to see if options already exist in the database */
@@ -204,14 +172,7 @@ if($header_id == '') {
 	add_option('his_header_path', 'http://www.merriecontrary.com/blog/wp-content/themes/flickred-202/images/bannerandwords.jpg');
 }
 
-/* Define Constants and variables*/
-//define('IMAGE_FOLDER', 'header-images/');
-//define('IMAGE_PATH', ABSPATH .'wp-content/'.IMAGE_FOLDER);
-//define('IMAGE_URI', get_option('siteurl').'/wp-content/'.IMAGE_FOLDER);
-//define('PLUGIN_URI', get_option('siteurl').'/wp-content/plugins/header-image-rotator-basic/');
-
 /* Functions */
-
 function img_switcher_admin_menu() {
 	add_submenu_page('themes.php', 'Header Image Switcher', 'Header Image Switcher', 'manage-options', __FILE__, 'img_switcher_options');
 }
@@ -246,7 +207,6 @@ function img_switcher_options() {
 	}
 
 ?>
-
 <div class="wrap">
 <form method="post">
 <h2>Header Image Switcher Settings</h2>
@@ -283,7 +243,6 @@ To upload a new image:
 </div>
 <?php
 }
-
 /* Add actions */
 add_action('admin_menu', 'img_switcher_admin_menu');
 

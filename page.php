@@ -9,7 +9,7 @@
 <div class="post" id="post-<?php the_ID(); ?>">
 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 <?php the_content(); ?>
-<?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
+<?php wp_link_pages('before=<p><strong>Pages:</strong>&after=</p>&next_or_number=number'); ?>
 	
 <div class="post-date"><?php the_time('F jS, Y') ?> <?php edit_post_link('Edit this entry.', '', ''); ?></div>
 </div>
