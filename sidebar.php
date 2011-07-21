@@ -3,7 +3,7 @@
 
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr">
+
 <ul>
 	<li><!--<h2><?php _e('Me'); ?></h2>-->
 		<ul>
@@ -13,10 +13,10 @@
 		</ul>
 	</li>
 </ul>
-</div></div></div></div>
+
 <div class="clear">&nbsp;</div>
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
+<ul>
 	<li>
 		<ul>
 			<li>
@@ -49,23 +49,23 @@ return false;
 </li>
 		</ul>
 	</li>
-</ul></div></div></div></div>
+</ul>
 <div class="clear">&nbsp;</div>
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
+<ul>
 	<li>
 		<p style="text-align:center"><a href="http://www.amazon.com/gp/registry/wishlist/1FZ31KM8Q7GS3/ref=wl_web/"><img src="http://ec1.images-amazon.com/images/G/01/gifts/registries/wishlist/v2/web/wl-btn-129-b._V46776269_.gif" width="129" alt="My Amazon.com Wish List" height="42" border="0" /></a></p>
 	</li>
-</ul></div></div></div></div>
+</ul>
 <div class="clear">&nbsp;</div>
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
+<ul>
 	<li>
 		<ul>
 			<li><?php get_calendar(); ?></li>
 		</ul>
 	</li>
-</ul></div></div></div></div>
+</ul>
 <div class="clear">&nbsp;</div>
 
 <!--
@@ -74,7 +74,7 @@ return false;
 </ul>
 -->
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
+<ul>
 	<li><h2><?php _e('Categories'); ?></h2>
 		<ul>
 			<?php //wp_list_categories('orderby=ID&showcount=0&depth=1'); ?>
@@ -84,10 +84,10 @@ return false;
    </form>
 		</ul>
 	</li>
-</ul></div></div></div></div>
+</ul>
 <div class="clear">&nbsp;</div>
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
+<ul>
 	<li><h2><?php _e('Archives'); ?></h2>
 		<ul>
 			<!-- <?php wp_get_archives('type=monthly'); ?> -->
@@ -96,21 +96,21 @@ return false;
   <?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?> </select>
 		</ul>
 	</li>
-</ul></div></div></div></div>
+</ul>
 <div class="clear">&nbsp;</div>
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
+<ul>
 <?php wp_list_bookmarks(); ?>
-</ul></div></div></div></div>
+</ul>
 <div class="clear">&nbsp;</div>
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
+<ul>
 	<li><h2><?php _e('Search'); ?></h2>
 		<ul>
 			<li><?php include(TEMPLATEPATH . '/searchform.php'); ?></li>
 		</ul>
 	</li>
-</ul></div></div></div></div>
+</ul>
 <div class="clear">&nbsp;</div>
 
 <!-- <ul>

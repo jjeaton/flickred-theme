@@ -5,6 +5,7 @@
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
+
 <div class="bl"><div class="br"><div class="tl"><div class="tr">
 <div class="post" id="post-<?php the_ID(); ?>">
 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>

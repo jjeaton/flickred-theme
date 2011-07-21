@@ -1,8 +1,8 @@
 <?php
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
-        'before_widget' => '<div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>',
-        'after_widget' => '</ul></div></div></div></div><div class="clear">&nbsp;</div>',
+        'before_widget' => '<ul>',
+        'after_widget' => '</ul>',
         'before_title' => '<h2>',
         'after_title' => '</h2>',
     ));

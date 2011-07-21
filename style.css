@@ -279,10 +279,6 @@ cite{
 }
 
 /* Rounded Corners CSS */
-.bl {background: url(images/bl.png) 0 100% no-repeat #f3f3f3;}
-.br {background: url(images/br.png) 100% 100% no-repeat;}
-.tl {background: url(images/tl.png) 0 0 no-repeat;}
-.tr {background: url(images/tr.png) 100% 0 no-repeat; padding:10px;}
 .clear {font-size: 1px; height: 1px; margin-bottom: 20px;} /* Margin replaced the #sidebar ul margin */
 
 #sidebar ul li{
