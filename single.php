@@ -6,8 +6,7 @@
 <?php while (have_posts()) : the_post(); ?>
 
 
-<div class="bl"><div class="br"><div class="tl"><div class="tr">
-<div class="post" id="post-<?php the_ID(); ?>">
+<div class="post rounded-corners" id="post-<?php the_ID(); ?>">
 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 <?php the_content('Read more&#8230;'); ?>
 <?php wp_link_pages('before=<strong>Pages&#58;</strong>&after=&next_or_number=number');?>
@@ -25,7 +24,7 @@
 
 <?php else : ?>
 
-	<div class="post">
+	<div class="post rounded-corners">
 <h2 class="center">Not Found</h2>
 <p>Sorry, but you are looking for something that isn't here.</p>
 	</div>
