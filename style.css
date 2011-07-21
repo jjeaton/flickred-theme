@@ -1,0 +1,336 @@
+/*  
+Theme Name: Flickred
+Theme URI: http://www.wpdesigner.com
+Description: Flickr.com inspired theme created by Small Potato of WPDesigner.com.
+Version: 2.0.2
+Author: Small Potato
+Author URI: http://www.wpdesigner.com/
+
+	Released under WPdesigner.com, this is my first public theme - Small Potato.
+	http://www.wpdesigner.com
+
+	Thanks to me, myself, and I.
+*/
+
+body, h1, h2, h3, form, p, ol, ul{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top;
+	background: #111;
+	color: #000;
+}
+
+table{
+	font-family: Verdana, Arial;
+	font-size: 12px;
+}
+
+a{
+	text-decoration: underline;
+	color: #3987FC;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+a img{
+	border: 0;
+}
+
+
+form, input, textarea{
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+ul, ul li{
+	list-style-type: none;
+}
+
+h1{
+	margin-bottom: 5px;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: normal;
+	color: #000;
+}
+
+h1 a{
+	text-decoration: none;
+	color: #000;
+}
+
+h1 a:hover{
+	text-decoration: underline;
+}
+
+#container{
+	margin: 0 auto;
+	width: 900px;
+	/*border-top: 5px solid #3987fc;*/
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	color: #000;
+}
+
+#page{
+	padding: 0 20px 20px 20px; 
+}
+
+#banner{
+	/*border-bottom: 5px solid #3987fc;*/
+	margin-bottom: 20px;
+}
+.description{
+	width: 860px;
+	border-top: 1px solid #eee;
+	font-size: 11px;
+	text-align: left;
+	vertical-align: top;
+	background: #f9f9d6;
+	color: #666;
+	clear: both;
+}
+
+.description p{
+	padding: 10px 20px  
+}
+
+#top-menu{
+	margin-bottom: 20px;
+	width: 860px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	font-family: Arial;
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	color: #000;
+}
+
+#top-menu p{
+	padding: 10px 20px  
+}
+
+#top-menu a{
+	padding-right: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #3987fc;
+}
+
+.narrowcolumn{
+	float: left;
+	margin-right: 20px;
+	width: 620px;
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	color: #000;
+}
+
+.widecolumn{
+	float: left;
+	margin-right: 20px;
+	width: 620px;
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	color: #000;
+}
+
+.post h2{
+	margin: 0 0 12px;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 28px;
+	color: #FF2E9A;
+}
+
+.post h2 a{
+	text-decoration: none;
+	color: #ff2e9a;
+}
+
+.post h2 a:hover{
+	text-decoration: underline;
+}
+
+.post{
+	padding: 15px 20px 0;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+	background: #f3f3f3;
+	color: #000;
+}
+
+.post p{
+	padding: 0 0 12px;
+}
+
+/* Added by Josh for image borders within posts */
+.post a img{
+	border: 2px solid black;
+	padding: 3px;
+}
+
+.post-date{
+	/*margin-bottom: 20px;
+	padding: 10px 20px;*/
+	font-family: Arial;
+	font-size: 11px;
+	/*background: #f9f9f9;*/
+	background: #f3f3f3;
+	color: #666;
+}
+
+.postmetadata{
+	font-size: 9px;
+}
+
+.navigation{
+	margin-bottom: 20px;
+	padding: 0 20px;
+}
+
+.navigation a{
+	color: #FF2E9A;
+}
+
+.commentlist ol, .commentlist ol li{
+	list-style-type: none;
+}
+
+.commentlist ol{
+	margin: 0 0 10px 0;
+}
+
+.commentlist ol li{
+	margin-bottom: 5px;
+	border: 1px solid #e8e8c5;
+	padding: 10px;
+	font-size: 11px;
+	background: #f9f9d6;
+	color: #000;
+}
+
+blockquote{
+	margin: 5px 0 5px 5px;
+	border: 1px solid #e6e6e6;
+	padding: 5px 10px;
+	font-family: Arial;
+	font-size: 11px;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	color: #333;
+}
+
+cite{
+	font-family: Arial;
+	font-size: 11px;
+	font-style: normal;
+}
+
+#sidebar{
+	float: left;
+	margin: 0;
+	width: 220px;
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	color: #000;
+}
+
+#sidebar h2{
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: normal;
+	color: #000;
+}
+
+#sidebar h2 a{
+	text-decoration: none;
+	color: #ff2e9a;
+}
+
+#sidebar h2 a:hover{
+	text-decoration: underline;
+}
+
+#sidebar ul{
+	margin: 0 0 0px; /*Original was: 0 0 20px*/
+	padding: 15px 20px 10px;
+	background: #f3f3f3;
+	color: #000;
+}
+
+/* Rounded Corners CSS */
+.bl {background: url(images/bl.png) 0 100% no-repeat #f3f3f3;}
+.br {background: url(images/br.png) 100% 100% no-repeat;}
+.tl {background: url(images/tl.png) 0 0 no-repeat;}
+.tr {background: url(images/tr.png) 100% 0 no-repeat; padding:10px;}
+.clear {font-size: 1px; height: 1px; margin-bottom: 20px;} /* Margin replaced the #sidebar ul margin */
+
+#sidebar ul li{
+	margin: 0;
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#sidebar ul ul{
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul ul li{
+	margin: 0 0 10px 0;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+#wp-calendar{
+	margin: 5px 0 0;
+	font-family: Arial;
+}
+
+#wp-calendar caption{
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	text-align: left;
+	color: #FF2E9A;
+}
+
+#wp-calendar th, #wp-calendar td{
+	padding: 3px;
+	background: #f3f3f3;
+	color: #000;
+}
+
+#footer{
+	clear: both;
+	width: 860px;
+	font-size: 11px;
+	text-align: left;
+	vertical-align: top;
+	background: #fff;
+	color: #000;
+}
+
+#footer p{
+	padding: 0 20px;
+}
