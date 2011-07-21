@@ -11,7 +11,7 @@
 <div class="post-date"><?php the_time('F jS, Y') ?> <?php edit_post_link('Edit this entry', '', ''); ?></div>
 <p class="postmetadata"><?php _e('tags&#58;'); ?> <?php the_category(', ') ?> <?php _e('author&#58;'); ?> <a href="<?php the_author_meta('url'); ?>"><?php the_author(); ?></a> <?php _e('comments&#58;'); ?> <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></p>
 </div>
-
+<div class="clear">&nbsp;</div>
 	
 
 <?php endwhile; ?>
