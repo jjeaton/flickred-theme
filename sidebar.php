@@ -77,7 +77,7 @@ return false;
 <div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
 	<li><h2><?php _e('Categories'); ?></h2>
 		<ul>
-			<!-- <?php wp_list_cats('sort_column=ID&optioncount=0&children=0'); ?> -->
+			<?php //wp_list_categories('orderby=ID&showcount=0&depth=1'); ?>
    <form action="<?php bloginfo('url'); ?>" method="get">
    <?php wp_dropdown_categories(); ?>
    <input type="submit" name="submit" value="view" />
@@ -92,7 +92,7 @@ return false;
 		<ul>
 			<!-- <?php wp_get_archives('type=monthly'); ?> -->
 <select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
-  <option value=""><?php echo attribute_escape(__('Select Month')); ?></option> 
+  <option value=""><?php echo esc_attr(__('Select Month')); ?></option> 
   <?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?> </select>
 		</ul>
 	</li>
@@ -100,7 +100,7 @@ return false;
 <div class="clear">&nbsp;</div>
 
 <div class="bl"><div class="br"><div class="tl"><div class="tr"><ul>
-<?php get_links_list(); ?>
+<?php wp_list_bookmarks(); ?>
 </ul></div></div></div></div>
 <div class="clear">&nbsp;</div>
 
